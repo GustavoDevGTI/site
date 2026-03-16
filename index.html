@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gustavo — Desenvolvedor</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="estilo.css"/>
+</head>
+<body>
+
+  <!-- Cursor personalizado -->
+  <div id="cursor"></div>
+  <div id="cursor-anel"></div>
+
+  <div class="pagina">
+
+    <!-- Cabeçalho -->
+    <header class="cabecalho">
+      <span class="cabecalho-logo">Gustavo.</span>
+      <span class="cabecalho-tag">Desenvolvedor &amp; Criador</span>
+    </header>
+
+    <!-- Herói -->
+    <section class="heroi">
+      <p class="heroi-subtitulo">Disponível para projetos</p>
+      <h1 class="heroi-titulo">
+        Olá, eu sou<br/>
+        <em>Gustavo.</em>
+      </h1>
+      <p class="heroi-descricao">
+        Desenvolvedor apaixonado por criar experiências digitais limpas,
+        funcionais e memoráveis. Transformo ideias em produtos que as
+        pessoas realmente querem usar.
+      </p>
+      <div class="heroi-linha-decorativa"></div>
+    </section>
+
+    <!-- Habilidades -->
+    <section class="secao" id="habilidades">
+      <p class="secao-rotulo">Stack &amp; Habilidades</p>
+      <div class="grade-habilidades" id="gradeHabilidades"></div>
+    </section>
+
+    <!-- Links -->
+    <section class="secao" id="links">
+      <p class="secao-rotulo">Me encontre em</p>
+      <div class="grade-links">
+        <a class="cartao-link" href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
+          <span class="cartao-link-plataforma">YouTube</span>
+          <span class="cartao-link-titulo">Conteúdo &amp; Tutoriais</span>
+          <span class="cartao-link-seta">↗</span>
+        </a>
+        <a class="cartao-link" href="https://www.hotmart.com" target="_blank" rel="noopener noreferrer">
+          <span class="cartao-link-plataforma">Hotmart</span>
+          <span class="cartao-link-titulo">Cursos &amp; Produtos</span>
+          <span class="cartao-link-seta">↗</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- JOGO DA VELHA -->
+    <section class="secao" id="jogo-da-velha">
+      <p class="secao-rotulo">Jogo da Velha</p>
+      <div class="jogos-cabecalho">
+        <p class="jogos-descricao">Dois jogadores — X começa primeiro</p>
+        <div class="placar-velha">
+          <span class="placar-item"><span class="placar-simbolo placar-x">X</span>&nbsp;<span id="placarX">0</span></span>
+          <span class="placar-separador">·</span>
+          <span class="placar-item"><span class="placar-simbolo placar-o">O</span>&nbsp;<span id="placarO">0</span></span>
+          <span class="placar-separador">·</span>
+          <span class="placar-item">Empates&nbsp;<span id="placarEmpate">0</span></span>
+        </div>
+      </div>
+      <p class="jogos-status" id="statusVelha">Vez do jogador X</p>
+      <div class="tabuleiro-velha" id="tabuleiroVelha"></div>
+      <button class="botao-reiniciar" id="btnReiniciarVelha">↺ Novo Jogo</button>
+    </section>
+
+    <!-- XADREZ -->
+    <section class="secao" id="xadrez">
+      <p class="secao-rotulo">Xadrez</p>
+      <div class="jogos-cabecalho">
+        <p class="jogos-descricao">Dois jogadores — Brancas começam</p>
+        <span class="xadrez-turno" id="xadrezTurno">♙ Vez das Brancas</span>
+      </div>
+      <p class="jogos-status" id="statusXadrez">Selecione uma peça para mover</p>
+      <div class="tabuleiro-xadrez-wrapper">
+        <div class="coordenadas-letras" id="coordLetras"></div>
+        <div class="tabuleiro-xadrez-linha">
+          <div class="coordenadas-numeros" id="coordNumeros"></div>
+          <div class="tabuleiro-xadrez" id="tabuleiroXadrez"></div>
+        </div>
+      </div>
+      <div class="xadrez-capturadas">
+        <div class="capturadas-grupo">
+          <span class="capturadas-rotulo">♙ Capturadas pelas Brancas:</span>
+          <span class="capturadas-pecas" id="captuaradasBrancas"></span>
+        </div>
+        <div class="capturadas-grupo">
+          <span class="capturadas-rotulo">♟ Capturadas pelas Pretas:</span>
+          <span class="capturadas-pecas" id="captuaradasPretas"></span>
+        </div>
+      </div>
+      <button class="botao-reiniciar" id="btnReiniciarXadrez">↺ Novo Jogo</button>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="rodape">
+      <span class="rodape-texto">© 2025 Gustavo — Todos os direitos reservados</span>
+      <div class="rodape-ponto" title="Online"></div>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
